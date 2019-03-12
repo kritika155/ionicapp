@@ -15,11 +15,16 @@ import {ListcustomerComponent} from './listcustomer/listcustomer.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import {EditcustomerComponent} from './editcustomer/editcustomer.component';
+import { StudentComponent } from './student/student.component'
+import {ListStudentComponent} from './list-student/list-student.component';
+import {AddStudentComponent} from './add-student/add-student.component';
 
 
 @NgModule({
   declarations: [AppComponent,LoginComponent,DashboardComponent ,
-    LogoutComponent,AboutComponent,CustomerComponent,AddcustomerComponent,ListcustomerComponent,EditcustomerComponent],
+    LogoutComponent,AboutComponent,CustomerComponent,
+    StudentComponent,AddcustomerComponent,ListcustomerComponent,
+    EditcustomerComponent,ListStudentComponent,AddStudentComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule],
   providers: [

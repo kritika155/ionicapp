@@ -8,6 +8,9 @@ import { AddcustomerComponent } from './addcustomer/addcustomer.component'
 import { ListcustomerComponent } from './listcustomer/listcustomer.component'
 import { CustomerComponent } from './customer/customer.component'
 import {EditcustomerComponent} from './editcustomer/editcustomer.component';
+import { StudentComponent } from './student/student.component'
+import {ListStudentComponent} from './list-student/list-student.component';
+import {AddStudentComponent} from './add-student/add-student.component';
 
 
 import { from } from 'rxjs';
@@ -22,6 +25,10 @@ const routes: Routes = [
   {path:'list-customer',component:ListcustomerComponent},
   {path:'add-customer',component:AddcustomerComponent},
   {path:'editcustomer/:id',component:EditcustomerComponent},
+  {path:'student',component:StudentComponent},
+  {path:'list-student',component:ListStudentComponent},
+  {path:'add-student',component:AddStudentComponent},
+
 ];
 
 @NgModule({

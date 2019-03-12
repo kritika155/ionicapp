@@ -6,12 +6,12 @@
       <ion-title>list of customers</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content padding>
+  <ion-content style="width:90%">
    <ion-card *ngFor='let customer of list' >
       <ion-icon name="person"></ion-icon>
-      <ion-button name="edit" (click)="onEdit(customer)" ><ion-icon name="create"></ion-icon></ion-button>
+      
       {{customer.name}}
-      <ion-button name="deletehere" (click)="deleteCustomer(customer)"><ion-icon name="trash"></ion-icon> </ion-button>    
+      <ion-button style="float:right" name="deletehere" (click)="deleteCustomer(customer)"><ion-icon name="trash"></ion-icon> </ion-button>    
 <hr>
       <ion-icon name="mail"></ion-icon> {{customer.email}}<br>
       <hr>
@@ -19,9 +19,12 @@
       <hr>
       <ion-icon name="pin"></ion-icon>
              {{customer.address}}
-             
+             <br><br>
+      <ion-button style="text-align:center" name="edit" (click)="onEdit(customer)" >
+                <ion-icon name="create"></ion-icon>
+              </ion-button>    
     </ion-card>
-        
+     
         
   </ion-content>
   
