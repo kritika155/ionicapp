@@ -23,7 +23,8 @@ export class CustomerComponent implements OnInit {
   		title: 'Add',
   		note:'/add-customer',
       icon: this.icons[1]
-  	});
+    });
+    
   }
   openUrl(item){
     this.router.navigate([item.note]);

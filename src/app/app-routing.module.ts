@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component'
 import { AddcustomerComponent } from './addcustomer/addcustomer.component'
 import { ListcustomerComponent } from './listcustomer/listcustomer.component'
 import { CustomerComponent } from './customer/customer.component'
+import {EditcustomerComponent} from './editcustomer/editcustomer.component';
 
 
 import { from } from 'rxjs';
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path:'customer',component:CustomerComponent},
   {path:'list-customer',component:ListcustomerComponent},
   {path:'add-customer',component:AddcustomerComponent},
+  {path:'editcustomer/:id',component:EditcustomerComponent},
 ];
 
 @NgModule({

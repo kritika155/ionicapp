@@ -14,10 +14,12 @@ import {AddcustomerComponent} from './addcustomer/addcustomer.component';
 import {ListcustomerComponent} from './listcustomer/listcustomer.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import {EditcustomerComponent} from './editcustomer/editcustomer.component';
+
 
 @NgModule({
   declarations: [AppComponent,LoginComponent,DashboardComponent ,
-    LogoutComponent,AboutComponent,CustomerComponent,AddcustomerComponent,ListcustomerComponent],
+    LogoutComponent,AboutComponent,CustomerComponent,AddcustomerComponent,ListcustomerComponent,EditcustomerComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule],
   providers: [

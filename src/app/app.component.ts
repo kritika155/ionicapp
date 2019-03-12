@@ -20,6 +20,7 @@ export class AppComponent {
       url: '/about',
       icon: 'clipboard'
     },
+    
     {
       title: 'Dashboard',
       url: '/dashboard',
